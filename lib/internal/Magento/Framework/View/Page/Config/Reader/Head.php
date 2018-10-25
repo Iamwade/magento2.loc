@@ -23,7 +23,7 @@ class Head implements Layout\ReaderInterface
      * Supported head elements
      */
     const HEAD_CSS = 'css';
-    const HEAD_SCRIPT = 'script';
+    const HEAD_SCRIPT = 'scripts';
     const HEAD_LINK = 'link';
     const HEAD_REMOVE = 'remove';
     const HEAD_TITLE = 'title';

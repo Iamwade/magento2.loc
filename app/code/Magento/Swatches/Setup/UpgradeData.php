@@ -19,7 +19,7 @@ use Magento\Framework\DB\DataConverter\SerializedToJson;
 use Magento\Framework\App\ObjectManager;
 
 /**
- * Upgrade Data script
+ * Upgrade Data scripts
  * @codeCoverageIgnore
  */
 class UpgradeData implements UpgradeDataInterface

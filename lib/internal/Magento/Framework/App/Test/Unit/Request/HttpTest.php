@@ -267,9 +267,9 @@ class HttpTest extends \PHPUnit\Framework\TestCase
             ['.\\index.php', '/'],
             ['/index.php', '/'],
             ['\\index.php', '/'],
-            ['subdir/script.php', 'subdir/'],
-            ['subdir\\script.php', 'subdir/'],
-            ['sub\\dir\\script.php', 'sub/dir/'],
+            ['subdir/scripts.php', 'subdir/'],
+            ['subdir\\scripts.php', 'subdir/'],
+            ['sub\\dir\\scripts.php', 'sub/dir/'],
         ];
     }
 

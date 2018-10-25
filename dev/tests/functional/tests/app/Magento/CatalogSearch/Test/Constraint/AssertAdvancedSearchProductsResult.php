@@ -102,7 +102,7 @@ class AssertAdvancedSearchProductsResult extends AbstractConstraint
         }
 
         if (!$searchBlock->isVisibleMessages($textMessage)) {
-            $errors[] = '- message does not match the search script';
+            $errors[] = '- message does not match the search scripts';
         }
 
         $searchData = $searchBlock->getSearchSummaryItems();

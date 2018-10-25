@@ -460,7 +460,7 @@ class Application
             $db->restoreFromDbDump();
         }
 
-        // run install script
+        // run install scripts
         $this->_shell->execute(
             PHP_BINARY . ' -f %s setup:install -vvv ' . implode(' ', array_keys($installParams)),
             array_merge([BP . '/bin/magento'], array_values($installParams))

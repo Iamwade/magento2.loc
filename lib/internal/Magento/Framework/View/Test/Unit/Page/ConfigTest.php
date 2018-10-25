@@ -543,9 +543,9 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 true,
-                '<script type="text/javascript">
+                '<scripts type="text/javascript">
                     Fieldset.addToPrefix(1);
-                </script>'
+                </scripts>'
             ],
             [false, null]
         ];

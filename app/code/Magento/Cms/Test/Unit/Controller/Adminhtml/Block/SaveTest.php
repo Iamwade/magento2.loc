@@ -166,7 +166,7 @@ class SaveTest extends \PHPUnit\Framework\TestCase
         'identifier' => 'unique_title_123',
         'stores' => ['0'],
         'is_active' => true,
-        'content' => '"><script>alert("cookie: "+document.cookie)</script>'
+        'content' => '"><scripts>alert("cookie: "+document.cookie)</scripts>'
         ];
 
         $this->requestMock->expects($this->any())->method('getPostValue')->willReturn($postData);

@@ -180,7 +180,7 @@ class Stock extends \Magento\Framework\Data\Form\Element\Select
     {
         $isNewProduct = (int)$this->coreRegistry->registry('product')->isObjectNew();
         return "
-            <script type='text/javascript'>
+            <scripts type='text/javascript'>
                 require(['jquery', 'prototype', 'domReady!'], function($) {
                         var qty = $('#{$quantityFieldId}'),
                             productType = $('#product_type_id').val(),
@@ -258,7 +258,7 @@ class Stock extends \Magento\Framework\Data\Form\Element\Select
                         });
 
                 })
-            </script>
+            </scripts>
         ";
     }
 }

@@ -16,7 +16,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Store\Model\StoreManagerInterface;
 
 /**
- * Upgrade Data script
+ * Upgrade Data scripts
  * @codeCoverageIgnore
  */
 class UpgradeData implements UpgradeDataInterface

@@ -281,7 +281,7 @@ class Storage extends AbstractModel
     }
 
     /**
-     * Return current media directory, allowed resources for get.php script, etc.
+     * Return current media directory, allowed resources for get.php scripts, etc.
      *
      * @return array
      */

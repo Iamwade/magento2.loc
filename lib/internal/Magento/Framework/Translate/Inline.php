@@ -175,9 +175,9 @@ class Inline implements \Magento\Framework\Translate\InlineInterface
     }
 
     /**
-     * Add inline script code
+     * Add inline scripts code
      *
-     * Insert script and html with
+     * Insert scripts and html with
      * added inline translation content.
      *
      * @return void
@@ -195,9 +195,9 @@ class Inline implements \Magento\Framework\Translate\InlineInterface
     }
 
     /**
-     * Retrieve inline script code
+     * Retrieve inline scripts code
      *
-     * Create block to render script and html with
+     * Create block to render scripts and html with
      * added inline translation content.
      *
      * @return string

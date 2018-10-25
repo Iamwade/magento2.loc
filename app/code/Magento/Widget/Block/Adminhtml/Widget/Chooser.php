@@ -187,7 +187,7 @@ class Chooser extends \Magento\Backend\Block\Template
             <div id="' .
             $chooserId .
             'advice-container" class="hidden"></div>
-            <script>
+            <scripts>
             require(["prototype", "mage/adminhtml/wysiwyg/widget"], function(){
             //<![CDATA[
                 (function() {
@@ -220,7 +220,7 @@ class Chooser extends \Magento\Backend\Block\Template
                 })();
             //]]>
             });
-            </script>
+            </scripts>
         ';
     }
 }

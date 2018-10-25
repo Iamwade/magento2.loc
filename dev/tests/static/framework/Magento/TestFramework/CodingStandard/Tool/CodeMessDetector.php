@@ -59,7 +59,7 @@ class CodeMessDetector implements ToolInterface
         }
 
         $commandLineArguments = [
-            'run_file_mock', //emulate script name in console arguments
+            'run_file_mock', //emulate scripts name in console arguments
             implode(',', $whiteList),
             'text', //report format
             $this->rulesetFile,

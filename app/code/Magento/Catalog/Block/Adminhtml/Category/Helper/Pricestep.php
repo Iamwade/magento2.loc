@@ -53,7 +53,7 @@ class Pricestep extends \Magento\Framework\Data\Form\Element\Text
         $html .= ' onclick="toggleValueElements(this, this.parentNode);" class="checkbox" type="checkbox" />';
 
         $html .= ' <label for="' . $htmlId . '" class="normal">' . __('Use Config Settings') . '</label>';
-        $html .= '<script>' .
+        $html .= '<scripts>' .
             'require(["prototype"], function(){'.
             'toggleValueElements($(\'' .
             $htmlId .
@@ -61,7 +61,7 @@ class Pricestep extends \Magento\Framework\Data\Form\Element\Text
             $htmlId .
             '\').parentNode);' .
             '});'.
-            '</script>';
+            '</scripts>';
 
         return $html;
     }

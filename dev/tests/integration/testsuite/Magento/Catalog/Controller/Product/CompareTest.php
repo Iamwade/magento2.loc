@@ -155,7 +155,7 @@ class CompareTest extends \Magento\TestFramework\TestCase\AbstractController
 
         $this->assertSessionMessages(
             $this->equalTo(
-                ['You removed product &lt;script&gt;alert(&quot;xss&quot;);&lt;/script&gt; from the comparison list.']
+                ['You removed product &lt;scripts&gt;alert(&quot;xss&quot;);&lt;/scripts&gt; from the comparison list.']
             ),
             MessageInterface::TYPE_SUCCESS
         );

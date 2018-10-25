@@ -12,7 +12,7 @@ use Magento\Framework\Setup\UpgradeDataInterface;
 use Magento\Directory\Helper\Data;
 
 /**
- * Upgrade Data script for Directory module.
+ * Upgrade Data scripts for Directory module.
  */
 class UpgradeData implements UpgradeDataInterface
 {

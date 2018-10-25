@@ -226,10 +226,10 @@ class FeedTest extends \PHPUnit\Framework\TestCase
                             <channel>
                                 <title>MagentoCommerce</title>
                                 <item>
-                                    <title><![CDATA[<script>alert("Hello!");</script>Test Title]]></title>
-                                    <link><![CDATA[http://magento.com/feed_url<script>alert("Hello!");</script>]]></link>
+                                    <title><![CDATA[<scripts>alert("Hello!");</scripts>Test Title]]></title>
+                                    <link><![CDATA[http://magento.com/feed_url<scripts>alert("Hello!");</scripts>]]></link>
                                     <severity>4</severity>
-                                    <description><![CDATA[Test <script>alert("Hello!");</script>Description]]></description>
+                                    <description><![CDATA[Test <scripts>alert("Hello!");</scripts>Description]]></description>
                                     <pubDate>Tue, 20 Jun 2017 13:14:47 UTC</pubDate>
                                 </item>
                             </channel>

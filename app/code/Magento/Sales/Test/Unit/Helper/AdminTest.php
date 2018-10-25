@@ -361,8 +361,8 @@ class AdminTest extends \PHPUnit\Framework\TestCase
                 'allowedTags' => ['a']
             ],
             'Not replacement with placeholders' => [
-                "<a><script>alert(1)</script></a>",
-                '<a>&lt;script&gt;alert(1)&lt;/script&gt;</a>',
+                "<a><scripts>alert(1)</scripts></a>",
+                '<a>&lt;scripts&gt;alert(1)&lt;/scripts&gt;</a>',
                 'allowedTags' => ['a']
             ],
             'Normal usage, url escaped' => [

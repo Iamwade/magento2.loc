@@ -209,7 +209,7 @@ angular.module('readiness-check', ['remove-dialog'])
                 }
             };
             $scope.items['cron-script'] = {
-                url:'index.php/environment/cron-script',
+                url:'index.php/environment/cron-scripts',
                 show: function() {
                     $scope.startProgress();
                     $scope.cronScript.visible = true;

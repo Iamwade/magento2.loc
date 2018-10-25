@@ -679,7 +679,7 @@ class Store extends AbstractExtensibleModel implements
     }
 
     /**
-     * Append script file name to url in case when server rewrites are disabled
+     * Append scripts file name to url in case when server rewrites are disabled
      *
      * @param   string $url
      * @return  string
@@ -711,7 +711,7 @@ class Store extends AbstractExtensibleModel implements
      * Retrieve URL for media catalog
      *
      * If we use Database file storage and server doesn't support rewrites (.htaccess in media folder)
-     * we have to put name of fetching media script exactly into URL
+     * we have to put name of fetching media scripts exactly into URL
      *
      * @param Filesystem $filesystem
      * @param bool $secure

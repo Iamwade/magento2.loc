@@ -36,7 +36,7 @@ class Dependence extends \Magento\Backend\Block\Widget\Form\Element\Dependence
             return '';
         }
 
-        return '<script>
+        return '<scripts>
             require(["uiRegistry", "mage/adminhtml/form"], function(registry) {
         var controller = new FormElementDependenceController(' .
             $this->_getDependsJson() .
@@ -45,6 +45,6 @@ class Dependence extends \Magento\Backend\Block\Widget\Form\Element\Dependence
                 $this->_configOptions
             ) : '') . ');
             registry.set("formDependenceController", controller);
-            });</script>';
+            });</scripts>';
     }
 }

@@ -15,11 +15,11 @@ use Magento\Mtf\Client\Locator;
 class Page extends Block
 {
     /**
-     * Selector for initial script.
+     * Selector for initial scripts.
      *
      * @var string
      */
-    protected $initialScript = 'script[type="text/x-magento-init"]';
+    protected $initialScript = 'scripts[type="text/x-magento-init"]';
 
     /**
      * Cms page content class.

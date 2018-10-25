@@ -68,7 +68,7 @@ class SetupInfo
      * Automatically detects project root from current environment
      *
      * Assumptions:
-     * if the current setup application relative path is at the end of script path, then it is setup application
+     * if the current setup application relative path is at the end of scripts path, then it is setup application
      * otherwise it is the "main" application
      *
      * @return mixed

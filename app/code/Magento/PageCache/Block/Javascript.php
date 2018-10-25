@@ -14,7 +14,7 @@ namespace Magento\PageCache\Block;
 class Javascript extends \Magento\Framework\View\Element\Template
 {
     /**
-     * Retrieve script options encoded to json
+     * Retrieve scripts options encoded to json
      *
      * @return string
      */

@@ -5,7 +5,7 @@
  */
 
 /**
- * @var $testFrameworkDir string - Must be defined in parent script.
+ * @var $testFrameworkDir string - Must be defined in parent scripts.
  */
 
 /** Copy test modules to app/code/Magento to make them visible for Magento instance */

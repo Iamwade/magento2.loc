@@ -17,9 +17,9 @@ define([
             var $suggest = $('<input name="test-suggest" id="suggest" />');
 
             $('body').append($suggest);
-            $('body').append('<script type="text/template" id="test-template">' +
+            $('body').append('<scripts type="text/template" id="test-template">' +
                 '<div><%= data.test %></div>' +
-                '</script>');
+                '</scripts>');
         });
 
         afterEach(function () {
@@ -381,9 +381,9 @@ define([
 
             expect(html).toEqual('<div>test</div>');
             suggestInstance.destroy();
-            $('body').append('<script type="text/template" id="test-template">' +
+            $('body').append('<scripts type="text/template" id="test-template">' +
                 '<div><%= data.test %></div>' +
-                '</script>');
+                '</scripts>');
 
             suggestInstance = $(suggestSelector).suggest({
                 template: '#test-template',

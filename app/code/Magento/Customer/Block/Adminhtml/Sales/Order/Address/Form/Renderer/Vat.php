@@ -95,11 +95,11 @@ class Vat extends \Magento\Backend\Block\Widget\Form\Renderer\Fieldset\Element
             );
 
             $optionsVarName = $this->getJsVariablePrefix() . 'VatParameters';
-            $beforeHtml = '<script>var ' .
+            $beforeHtml = '<scripts>var ' .
                 $optionsVarName .
                 ' = ' .
                 $vatValidateOptions .
-                ';</script>';
+                ';</scripts>';
             $this->_validateButton = $this->getLayout()->createBlock(
                 \Magento\Backend\Block\Widget\Button::class
             )->setData(

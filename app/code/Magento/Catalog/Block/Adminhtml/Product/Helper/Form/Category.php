@@ -138,11 +138,11 @@ class Category extends \Magento\Framework\Data\Form\Element\Multiselect
             );
         $return = <<<HTML
     <input id="{$htmlId}-suggest" placeholder="$suggestPlaceholder" />
-    <script>
+    <scripts>
         require(["jquery", "mage/mage"], function($){
             $('#{$htmlId}-suggest').mage('treeSuggest', {$selectorOptions});
         });
-    </script>
+    </scripts>
 HTML;
         return $return . $button->toHtml();
     }

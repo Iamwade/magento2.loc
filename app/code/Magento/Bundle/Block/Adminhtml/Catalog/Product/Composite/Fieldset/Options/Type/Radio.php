@@ -26,12 +26,12 @@ class Radio extends \Magento\Bundle\Block\Catalog\Product\View\Type\Bundle\Optio
      */
     public function setValidationContainer($elementId, $containerId)
     {
-        return '<script>
+        return '<scripts>
             document.getElementById(\'' .
             $elementId .
             '\').advaiceContainer = \'' .
             $containerId .
             '\';
-            </script>';
+            </scripts>';
     }
 }

@@ -14,7 +14,7 @@ use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 /**
- * Data upgrade script
+ * Data upgrade scripts
  *
  * @codeCoverageIgnore
  */

@@ -345,15 +345,15 @@ class RendererTest extends \PHPUnit\Framework\TestCase
                 ['type' => 'js', 'attributes' => 'attr="value"', 'condition' => null],
                 '<link  rel="stylesheet" type="text/css"  media="all" href="url" />' . "\n"
                     . '<link  rel="stylesheet" type="text/css"  media="all" href="url" />' . "\n"
-                    . '<script  type="text/javascript"  attr="value" src="no_route_url"></script>' . "\n"
+                    . '<scripts  type="text/javascript"  attr="value" src="no_route_url"></scripts>' . "\n"
             ],
             [
                 ['type' => 'js', 'attributes' => ['attr' => 'value'], 'condition' => 'lt IE 7'],
                 ['type' => 'css', 'attributes' => 'attr="value"', 'condition' => null],
                 '<link  rel="stylesheet" type="text/css"  attr="value" href="no_route_url" />' . "\n"
                     . '<!--[if lt IE 7]>' . "\n"
-                    . '<script  type="text/javascript"  attr="value" src="url"></script>' . "\n"
-                    . '<script  type="text/javascript"  attr="value" src="url"></script>' . "\n"
+                    . '<scripts  type="text/javascript"  attr="value" src="url"></scripts>' . "\n"
+                    . '<scripts  type="text/javascript"  attr="value" src="url"></scripts>' . "\n"
                     . '<![endif]-->' . "\n"
             ],
             [
@@ -367,8 +367,8 @@ class RendererTest extends \PHPUnit\Framework\TestCase
                 ['type' => 'js', 'attributes' => '', 'condition' => null],
                 ['type' => 'ico', 'attributes' => ['attr' => 'value'], 'condition' => null],
                 '<link  attr="value" href="no_route_url" />' . "\n"
-                    . '<script  type="text/javascript"  src="url"></script>' . "\n"
-                    . '<script  type="text/javascript"  src="url"></script>' . "\n"
+                    . '<scripts  type="text/javascript"  src="url"></scripts>' . "\n"
+                    . '<scripts  type="text/javascript"  src="url"></scripts>' . "\n"
             ],
             [
                 ['type' => 'non', 'attributes' => ['attr' => 'value'], 'condition' => null],

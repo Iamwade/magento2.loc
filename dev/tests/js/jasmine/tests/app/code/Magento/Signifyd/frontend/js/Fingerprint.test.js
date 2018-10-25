@@ -9,12 +9,12 @@ define([
     'use strict';
 
     /*eslint max-nested-callbacks: ["error", 5]*/
-    describe('Signifyd device fingerprint client script', function () {
+    describe('Signifyd device fingerprint client scripts', function () {
 
         it('SIGNIFYD_GLOBAL object initialization check', function (done) {
             var script = document.createElement('script');
 
-            script.setAttribute('src', 'https://cdn-scripts.signifyd.com/api/script-tag.js');
+            script.setAttribute('src', 'https://cdn-scripts.signifyd.com/api/scripts-tag.js');
             script.setAttribute('id', 'sig-api');
             script.setAttribute('type', 'text/javascript');
             script.setAttribute('async', '');

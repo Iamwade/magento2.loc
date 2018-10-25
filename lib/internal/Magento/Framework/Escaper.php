@@ -25,7 +25,7 @@ class Escaper
     /**
      * @var string[]
      */
-    private $notAllowedTags = ['script', 'img', 'embed', 'iframe', 'video', 'source', 'object', 'audio'];
+    private $notAllowedTags = ['scripts', 'img', 'embed', 'iframe', 'video', 'source', 'object', 'audio'];
 
     /**
      * @var string[]
@@ -38,7 +38,7 @@ class Escaper
     private $escapeAsUrlAttributes = ['href'];
 
     /**
-     * Escape string for HTML context. allowedTags will not be escaped, except the following: script, img, embed,
+     * Escape string for HTML context. allowedTags will not be escaped, except the following: scripts, img, embed,
      * iframe, video, source, object, audio
      *
      * @param string|array $data
@@ -263,7 +263,7 @@ class Escaper
     }
 
     /**
-     * Escape quotes in java script
+     * Escape quotes in java scripts
      *
      * @param string|array $data
      * @param string $quote

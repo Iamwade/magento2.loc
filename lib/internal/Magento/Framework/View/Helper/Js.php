@@ -19,6 +19,6 @@ class Js
      */
     public function getScript($script)
     {
-        return '<script type="text/javascript">//<![CDATA[' . "\n{$script}\n" . '//]]></script>';
+        return '<scripts type="text/javascript">//<![CDATA[' . "\n{$script}\n" . '//]]></scripts>';
     }
 }

@@ -52,7 +52,7 @@ abstract class AbstractSave implements ObserverInterface
     }
 
     /**
-     * Save script after saving entity
+     * Save scripts after saving entity
      *
      * @param Observer $observer
      * @return $this

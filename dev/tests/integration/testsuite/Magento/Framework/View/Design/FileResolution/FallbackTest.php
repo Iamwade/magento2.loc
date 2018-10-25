@@ -214,12 +214,12 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
                 '%s/frontend/Vendor/default/web/i18n/ru_RU/fixture_script.js',
             ],
             'non-modular: override js lib file' => [
-                'mage/script.js', 'Vendor_ViewTest/custom_theme', null, null,
-                '%s/frontend/Vendor/custom_theme/web/mage/script.js',
+                'mage/scripts.js', 'Vendor_ViewTest/custom_theme', null, null,
+                '%s/frontend/Vendor/custom_theme/web/mage/scripts.js',
             ],
             'non-modular: inherit js lib file' => [
-                'mage/script.js', 'Vendor_ViewTest/default', null, null,
-                '%s/lib/web/mage/script.js',
+                'mage/scripts.js', 'Vendor_ViewTest/default', null, null,
+                '%s/lib/web/mage/scripts.js',
             ],
             'modular: no default inheritance' => [
                 'fixture_script.js', 'Vendor_ViewTest/standalone_theme', null, 'ViewTest_Module',
@@ -230,7 +230,7 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
                 null,
             ],
             'modular: no fallback to js lib file' => [
-                'mage/script.js', 'Vendor_ViewTest/default', null, 'ViewTest_Module',
+                'mage/scripts.js', 'Vendor_ViewTest/default', null, 'ViewTest_Module',
                 null,
             ],
             'modular: no fallback to non-modular localized file' => [

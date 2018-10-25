@@ -60,7 +60,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture sampleFixtureTwo
-     * @magentoDataFixture path/to/fixture/script.php
+     * @magentoDataFixture path/to/fixture/scripts.php
      */
     public function testStartTestTransactionRequestMethodAnnotation()
     {
@@ -79,7 +79,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDbIsolation disabled
      * @magentoDataFixture sampleFixtureTwo
-     * @magentoDataFixture path/to/fixture/script.php
+     * @magentoDataFixture path/to/fixture/scripts.php
      */
     public function testDisabledDbIsolation()
     {
@@ -106,7 +106,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture sampleFixtureTwo
-     * @magentoDataFixture path/to/fixture/script.php
+     * @magentoDataFixture path/to/fixture/scripts.php
      */
     public function testEndTestTransactionRequestMethodAnnotation()
     {
@@ -130,7 +130,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture sampleFixtureTwo
-     * @magentoDataFixture path/to/fixture/script.php
+     * @magentoDataFixture path/to/fixture/scripts.php
      */
     public function testStartTransactionMethodAnnotation()
     {
@@ -140,7 +140,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
         )->method(
             '_applyOneFixture'
         )->with(
-            $this->stringEndsWith('path/to/fixture/script.php')
+            $this->stringEndsWith('path/to/fixture/scripts.php')
         );
         $this->_object->startTransaction($this);
     }
@@ -163,7 +163,7 @@ class DataFixtureTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoDataFixture path/to/fixture/script.php
+     * @magentoDataFixture path/to/fixture/scripts.php
      * @magentoDataFixture sample_fixture_two.php
      */
     public function testRollbackTransactionRevertFixtureFile()

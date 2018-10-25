@@ -11,7 +11,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\UpgradeDataInterface;
 
 /**
- * Upgrade Data script
+ * Upgrade Data scripts
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

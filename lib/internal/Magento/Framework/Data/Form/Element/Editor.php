@@ -85,7 +85,7 @@ class Editor extends Textarea
     public function getElementHtml()
     {
         $js = '
-            <script type="text/javascript">
+            <scripts type="text/javascript">
             //<![CDATA[
                 openEditorPopup = function(url, name, specs, parent) {
                     if ((typeof popups == "undefined") || popups[name] == undefined || popups[name].closed) {
@@ -106,7 +106,7 @@ class Editor extends Textarea
                     }
                 }
             //]]>
-            </script>';
+            </scripts>';
 
         if ($this->isEnabled()) {
             $jsSetupObject = 'wysiwyg' . $this->getHtmlId();
@@ -145,7 +145,7 @@ class Editor extends Textarea
                 '</textarea>' .
                 $js .
                 '
-                <script type="text/javascript">
+                <scripts type="text/javascript">
                 //<![CDATA[
                 window.tinyMCE_GZ = window.tinyMCE_GZ || {}; 
                 window.tinyMCE_GZ.loaded = true;
@@ -190,7 +190,7 @@ class Editor extends Textarea
                 '.openFileBrowser);
                 //]]>
                 });
-                </script>';
+                </scripts>';
 
             $html = $this->_wrapIntoContainer($html);
             $html .= $this->getAfterElementHtml();
@@ -200,7 +200,7 @@ class Editor extends Textarea
             if ($this->getConfig('widget_window_url')) {
                 $html = $this->_getButtonsHtml() . $js . parent::getElementHtml();
                 if ($this->getConfig('add_widgets')) {
-                    $html .= '<script type="text/javascript">
+                    $html .= '<scripts type="text/javascript">
                     //<![CDATA[
                     require(["jquery", "mage/translate", "mage/adminhtml/wysiwyg/widget"], function(jQuery){
                         (function($) {
@@ -208,7 +208,7 @@ class Editor extends Textarea
                         })(jQuery);
                     });
                     //]]>
-                    </script>';
+                    </scripts>';
                 }
                 $html = $this->_wrapIntoContainer($html);
                 return $html;

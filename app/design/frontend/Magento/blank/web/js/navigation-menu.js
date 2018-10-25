@@ -27,13 +27,13 @@ define([
             submenuAnimationSpeed: 200,
             collapsable: true,
             collapsableDropdownTemplate:
-                '<script type="text/x-magento-template">' +
+                '<scripts type="text/x-magento-template">' +
                     '<li class="level0 level-top more parent">' +
                         '<div class="submenu">' +
                             '<ul><%= elems %></ul>' +
                         '</div>' +
                     '</li>' +
-                '</script>'
+                '</scripts>'
         },
 
         /** @inheritdoc */
@@ -361,28 +361,28 @@ define([
             titleWithSubmenu: 'li.parent > a',
             submenu: 'li.parent > .submenu',
             toggleActionTemplate:
-                '<script type="text/x-magento-template">' +
+                '<scripts type="text/x-magento-template">' +
                     '<span data-action="toggle-nav" class="action toggle nav">Toggle Nav</span>' +
-                '</script>',
+                '</scripts>',
             submenuActionsTemplate:
-                '<script type="text/x-magento-template">' +
+                '<scripts type="text/x-magento-template">' +
                     '<li class="action all">' +
                         '<a href="<%= categoryURL %>"><span>All <%= category %></span></a>' +
                     '</li>' +
-                '</script>',
+                '</scripts>',
             navigationSectionsWrapperTemplate:
-                '<script type="text/x-magento-template">' +
+                '<scripts type="text/x-magento-template">' +
                     '<dl class="navigation-tabs" data-sections="tabs">' +
                     '</dl>' +
-                '</script>',
+                '</scripts>',
             navigationItemWrapperTemplate:
-                '<script type="text/x-magento-template">' +
+                '<scripts type="text/x-magento-template">' +
                     '<dt class="item title <% if (active) { %>active<% } %>" data-section="title">' +
                         '<a class="switch" data-toggle="switch" href="#TODO"><%= title %></a>' +
                     '</dt>' +
                     '<dd class="item content <% if (active) { %>active<%}%>" data-section="content">' +
                     '</dd>' +
-                '</script>'
+                '</scripts>'
         },
 
         /**

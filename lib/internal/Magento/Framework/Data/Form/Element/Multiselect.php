@@ -143,7 +143,7 @@ class Multiselect extends AbstractElement
 
         $result .= $this->getNoSpan() === true ? '' : '</span>' . "\n";
 
-        $result .= '<script type="text/javascript">' . "\n";
+        $result .= '<scripts type="text/javascript">' . "\n";
         $result .= '   var ' . $this->getJsObjectName() . ' = {' . "\n";
         $result .= '     selectAll: function() { ' . "\n";
         $result .= '         var sel = $("' . $this->getHtmlId() . '");' . "\n";
@@ -160,7 +160,7 @@ class Multiselect extends AbstractElement
         $result .= '         return false; ' . "\n";
         $result .= '     }' . "\n";
         $result .= '  }' . "\n";
-        $result .= "\n" . '</script>';
+        $result .= "\n" . '</scripts>';
 
         return $result;
     }

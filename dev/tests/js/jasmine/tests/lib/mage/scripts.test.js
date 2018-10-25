@@ -5,7 +5,7 @@
 
 define([
     'tests/assets/tools',
-    'tests/assets/script/index',
+    'tests/assets/scripts/index',
     'mage/apply/scripts'
 ], function (tools, config, processScripts) {
     'use strict';
@@ -21,11 +21,11 @@ define([
             expect(typeof processScripts).toBe('function');
         });
 
-        it('removes script node after processing it', function () {
+        it('removes scripts node after processing it', function () {
             var preset = config.virtual;
 
             /**
-             * Checks if script node exists.
+             * Checks if scripts node exists.
              *
              * @returns {Boolean}
              */
@@ -42,7 +42,7 @@ define([
             expect(hasNode()).toBe(false);
         });
 
-        it('parses custom script nodes without element selector', function () {
+        it('parses custom scripts nodes without element selector', function () {
             var virtuals,
                 preset = config.virtual;
 

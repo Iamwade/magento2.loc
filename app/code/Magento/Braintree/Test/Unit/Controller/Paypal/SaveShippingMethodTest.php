@@ -274,7 +274,7 @@ class SaveShippingMethodTest extends \PHPUnit\Framework\TestCase
 
         $this->responseMock->expects(self::once())
             ->method('setBody')
-            ->with(sprintf('<script>window.location.href = "%s";</script>', $redirectPath));
+            ->with(sprintf('<scripts>window.location.href = "%s";</scripts>', $redirectPath));
 
         $this->saveShippingMethod->execute();
     }

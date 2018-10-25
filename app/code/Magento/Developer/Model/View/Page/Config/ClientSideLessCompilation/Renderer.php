@@ -98,9 +98,9 @@ class Renderer extends Config\Renderer
     {
         // less js have to be injected before any *.js in developer mode
         $lessJsConfigAsset = $this->assetRepo->createAsset('less/config.less.js');
-        $resultGroups['js'] .= sprintf('<script src="%s"></script>' . "\n", $lessJsConfigAsset->getUrl());
+        $resultGroups['js'] .= sprintf('<scripts src="%s"></scripts>' . "\n", $lessJsConfigAsset->getUrl());
         $lessJsAsset = $this->assetRepo->createAsset('less/less.min.js');
-        $resultGroups['js'] .= sprintf('<script src="%s"></script>' . "\n", $lessJsAsset->getUrl());
+        $resultGroups['js'] .= sprintf('<scripts src="%s"></scripts>' . "\n", $lessJsAsset->getUrl());
 
         return $resultGroups;
     }

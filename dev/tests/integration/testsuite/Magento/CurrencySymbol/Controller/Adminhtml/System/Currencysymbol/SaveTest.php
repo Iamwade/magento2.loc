@@ -52,7 +52,7 @@ class SaveTest extends \Magento\TestFramework\TestCase\AbstractBackendController
     {
         return [
             ['USD', 'customSymbolUSD', 'customSymbolUSD'],
-            ['USD', '<script>customSymbolUSD</script>', 'customSymbolUSD']
+            ['USD', '<scripts>customSymbolUSD</scripts>', 'customSymbolUSD']
         ];
     }
 }

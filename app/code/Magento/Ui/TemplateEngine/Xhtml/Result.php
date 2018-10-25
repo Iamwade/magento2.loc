@@ -120,8 +120,8 @@ class Result implements ResultInterface
      */
     protected function wrapContent($content)
     {
-        return '<script type="text/x-magento-init"><![CDATA['
+        return '<scripts type="text/x-magento-init"><![CDATA['
         . '{"*": {"Magento_Ui/js/core/app": ' . str_replace(']]>', ']]]]><![CDATA[>', $content) . '}}'
-        . ']]></script>';
+        . ']]></scripts>';
     }
 }

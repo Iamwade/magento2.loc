@@ -138,7 +138,7 @@ abstract class AbstractDb
     }
 
     /**
-     * Create file with sql script content.
+     * Create file with sql scripts content.
      * Utility method that is used in children classes
      *
      * @param string $file

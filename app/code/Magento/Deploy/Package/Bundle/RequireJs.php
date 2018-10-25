@@ -261,7 +261,7 @@ class RequireJs implements BundleInterface
     }
 
     /**
-     * Bundle initialization script content (this must be added to the latest bundle file at the very end)
+     * Bundle initialization scripts content (this must be added to the latest bundle file at the very end)
      *
      * @return string
      */

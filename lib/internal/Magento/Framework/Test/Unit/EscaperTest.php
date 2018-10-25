@@ -207,8 +207,8 @@ class EscaperTest extends \PHPUnit\Framework\TestCase
             ],
             'text with allowed and not allowed tags, with allowed and not allowed attributes' => [
                 'data' => 'Some test <span>text in span tag</span> <strong>text in strong tag</strong> '
-                    . '<a type="some-type" href="http://domain.com/" onclick="alert(1)">Click here</a><script>alert(1)'
-                    . '</script>',
+                    . '<a type="some-type" href="http://domain.com/" onclick="alert(1)">Click here</a><scripts>alert(1)'
+                    . '</scripts>',
                 'expected' => 'Some test <span>text in span tag</span> text in strong tag <a href="http://domain.com/">'
                     . 'Click here</a>alert(1)',
                 'allowedTags' => ['a', 'span'],
@@ -242,10 +242,10 @@ class EscaperTest extends \PHPUnit\Framework\TestCase
     public function escapeHtmlInvalidDataProvider()
     {
         return [
-            'text with allowed script tag' => [
-                'data' => '<span><script>some text in tags</script></span>',
+            'text with allowed scripts tag' => [
+                'data' => '<span><scripts>some text in tags</scripts></span>',
                 'expected' => '<span>some text in tags</span>',
-                'allowedTags' => ['span', 'script'],
+                'allowedTags' => ['span', 'scripts'],
             ],
             'text with invalid html' => [
                 'data' => '<spa>n id="id1">Some string</span>',

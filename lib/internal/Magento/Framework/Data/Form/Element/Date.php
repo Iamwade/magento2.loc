@@ -51,7 +51,7 @@ class Date extends AbstractElement
     }
 
     /**
-     * If script executes on x64 system, converts large
+     * If scripts executes on x64 system, converts large
      * numeric values to timestamp limit
      *
      * @param int $value

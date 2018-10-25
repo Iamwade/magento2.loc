@@ -4737,7 +4737,7 @@
                  *
                  * @description
                  * A cache object used to store and retrieve data, primarily used by
-                 * {@link $http $http} and the {@link ng.directive:script script} directive to cache
+                 * {@link $http $http} and the {@link ng.directive:scripts scripts} directive to cache
                  * templates and other data.
                  *
                  * ```js
@@ -4989,18 +4989,18 @@
      *
      * @description
      * The first time a template is used, it is loaded in the template cache for quick retrieval. You
-     * can load templates directly into the cache in a `script` tag, or by consuming the
+     * can load templates directly into the cache in a `scripts` tag, or by consuming the
      * `$templateCache` service directly.
      *
-     * Adding via the `script` tag:
+     * Adding via the `scripts` tag:
      *
      * ```html
-     *   <script type="text/ng-template" id="templateId.html">
+     *   <scripts type="text/ng-template" id="templateId.html">
      *     <p>This is the content of the template</p>
-     *   </script>
+     *   </scripts>
      * ```
      *
-     * **Note:** the `script` tag containing the template does not need to be included in the `head` of
+     * **Note:** the `scripts` tag containing the template does not need to be included in the `head` of
      * the document, but it must be below the `ng-app` definition.
      *
      * Adding via the $templateCache service:
@@ -8415,9 +8415,9 @@
         };
 
         function jsonpReq(url, done) {
-            // we can't use jQuery/jqLite here because jQuery does crazy shit with script elements, e.g.:
+            // we can't use jQuery/jqLite here because jQuery does crazy shit with scripts elements, e.g.:
             // - fetches local scripts via XHR and evals them
-            // - adds and immediately removes script elements from the document
+            // - adds and immediately removes scripts elements from the document
             var script = rawDocument.createElement('script'),
                 doneWrapper = function() {
                     script.onreadystatechange = script.onload = script.onerror = null;
@@ -12832,7 +12832,7 @@
         CSS: 'css',
         URL: 'url',
         // RESOURCE_URL is a subtype of URL used in contexts where a privileged resource is sourced from a
-        // url.  (e.g. ng-include, script src, templateUrl)
+        // url.  (e.g. ng-include, scripts src, templateUrl)
         RESOURCE_URL: 'resourceUrl',
         JS: 'js'
     };

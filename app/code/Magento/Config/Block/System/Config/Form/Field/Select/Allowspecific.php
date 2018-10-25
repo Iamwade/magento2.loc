@@ -27,7 +27,7 @@ class Allowspecific extends \Magento\Framework\Data\Form\Element\Select
         $useDefaultElementId = $countryListId . '_inherit';
 
         $elementJavaScript = <<<HTML
-<script type="text/javascript">
+<scripts type="text/javascript">
 //<![CDATA[
 document.getElementById('{$elementId}').addEventListener('change', function(event) {
     var isCountrySpecific = event.target.value == 1,
@@ -44,7 +44,7 @@ document.getElementById('{$elementId}').addEventListener('change', function(even
     }
 });
 //]]>
-</script>
+</scripts>
 HTML;
 
         return $elementJavaScript . parent::getAfterElementHtml();

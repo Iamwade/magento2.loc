@@ -127,7 +127,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
         $conversionId = 123;
         $label = 'LabEl';
         $imgSrc = sprintf(
-            'https://www.googleadservices.com/pagead/conversion/%s/?label=%s&amp;guid=ON&amp;script=0',
+            'https://www.googleadservices.com/pagead/conversion/%s/?label=%s&amp;guid=ON&amp;scripts=0',
             $conversionId,
             $label
         );

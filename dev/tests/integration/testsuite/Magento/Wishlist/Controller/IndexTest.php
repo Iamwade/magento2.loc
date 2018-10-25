@@ -113,7 +113,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractController
         $this->assertSessionMessages(
             $this->equalTo(
                 [
-                    "\n&lt;script&gt;alert(&quot;xss&quot;);&lt;/script&gt; has been added to your Wish List. "
+                    "\n&lt;scripts&gt;alert(&quot;xss&quot;);&lt;/scripts&gt; has been added to your Wish List. "
                     . 'Click <a href="http://localhost/index.php/">here</a> to continue shopping.',
                 ]
             ),

@@ -82,7 +82,7 @@ class RendererTest extends \PHPUnit\Framework\TestCase
         ];
         $this->assetRepo->expects($this->exactly(2))->method('createAsset')->will($this->returnValueMap($assetMap));
 
-        $resultGroups = "<script src=\"$lessConfigUrl\"></script>\n<script src=\"$lessMinUrl\"></script>\n";
+        $resultGroups = "<scripts src=\"$lessConfigUrl\"></scripts>\n<scripts src=\"$lessMinUrl\"></scripts>\n";
 
         // Call method
         $this->assertSame($resultGroups, $this->model->renderAssets(['js' => '']));

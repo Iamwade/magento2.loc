@@ -98,8 +98,8 @@ class Price extends \Magento\Framework\Data\Form\Element\Text
      */
     protected function _getTaxObservingCode($attribute)
     {
-        $html = "<script type='text/javascript'>if (dynamicTaxes == undefined) var dynamicTaxes = new Array();"
-            . " dynamicTaxes[dynamicTaxes.length]='{$attribute->getAttributeCode()}'</script>";
+        $html = "<scripts type='text/javascript'>if (dynamicTaxes == undefined) var dynamicTaxes = new Array();"
+            . " dynamicTaxes[dynamicTaxes.length]='{$attribute->getAttributeCode()}'</scripts>";
         return $html;
     }
 

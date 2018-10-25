@@ -10,7 +10,7 @@ use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 /**
- * Upgrade data script for Integration module
+ * Upgrade data scripts for Integration module
  */
 class UpgradeData implements UpgradeDataInterface
 {

@@ -39,14 +39,14 @@ class Image extends \Magento\Framework\Data\Form\Element\Image
             } else {
                 $inputField = '<input value="%s" id="%s_hidden" type="hidden" class="required-entry" />';
                 $html .= sprintf($inputField, $this->getValue(), $this->getHtmlId());
-                $html .= '<script>require(["prototype"], function(){
+                $html .= '<scripts>require(["prototype"], function(){
                     syncOnchangeValue(\'' .
                     $this->getHtmlId() .
                     '\', \'' .
                     $this->getHtmlId() .
                     '_hidden\');
                 });
-                </script>';
+                </scripts>';
             }
         } else {
             $html .= parent::_getDeleteCheckbox();

@@ -99,7 +99,7 @@ class ApiDataFixture
     }
 
     /**
-     * Execute single fixture script
+     * Execute single fixture scripts
      *
      * @param string|array $fixture
      * @throws \Exception

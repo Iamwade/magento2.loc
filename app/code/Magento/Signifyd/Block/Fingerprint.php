@@ -12,7 +12,7 @@ use Magento\Signifyd\Model\QuoteSession\QuoteSessionInterface;
 use Magento\Signifyd\Model\SignifydOrderSessionId;
 
 /**
- * Provides data for Signifyd device fingerprinting script.
+ * Provides data for Signifyd device fingerprinting scripts.
  *
  * Signifyd’s device fingerprinting solution uniquely tracks and identifies devices
  * used to transact on your site, increasing your protection from fraud.

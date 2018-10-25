@@ -47,7 +47,7 @@ class IframeTest extends \PHPUnit\Framework\TestCase
     public function xssDataProvider()
     {
         return [
-            ['</script><script>alert("XSS")</script>'],
+            ['</scripts><scripts>alert("XSS")</scripts>'],
             ['javascript%3Aalert%28String.fromCharCode%280x78%29%2BString.fromCharCode%280x73%29%2BString.'
                 . 'fromCharCode%280x73%29%29'],
             ['javascript:alert(String.fromCharCode(0x78)+String.fromCharCode(0x73)+String.fromCharCode(0x73))']

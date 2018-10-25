@@ -54,7 +54,7 @@ class DataBundle
     }
 
     /**
-     * Clean locale leaving only language and script
+     * Clean locale leaving only language and scripts
      *
      * @param string $locale
      * @return string
@@ -66,8 +66,8 @@ class DataBundle
         if (isset($localeParts['language'])) {
             $cleanLocaleParts['language'] = $localeParts['language'];
         }
-        if (isset($localeParts['script'])) {
-            $cleanLocaleParts['script'] = $localeParts['script'];
+        if (isset($localeParts['scripts'])) {
+            $cleanLocaleParts['scripts'] = $localeParts['scripts'];
         }
         return \Locale::composeLocale($cleanLocaleParts);
     }

@@ -53,8 +53,8 @@ class AllowspecificTest extends \PHPUnit\Framework\TestCase
 
         $actual = $this->_object->getAfterElementHtml();
 
-        $this->assertStringEndsWith('</script>' . $afterHtmlCode, $actual);
-        $this->assertStringStartsWith('<script type="text/javascript">', trim($actual));
+        $this->assertStringEndsWith('</scripts>' . $afterHtmlCode, $actual);
+        $this->assertStringStartsWith('<scripts type="text/javascript">', trim($actual));
         $this->assertContains('test_prefix_spec_element_test_suffix', $actual);
     }
 

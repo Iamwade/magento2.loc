@@ -36,7 +36,7 @@ class Updater extends \Magento\Config\Block\System\Config\Form\Field
     {
         $html = parent::_getElementHtml($element);
 
-        $js = '<script>
+        $js = '<scripts>
               require(["prototype", "mage/adminhtml/form"], function(){
                updater = new RegionUpdater("tax_defaults_country", "none", "tax_defaults_region", %s, "nullify");
                if(updater.lastCountryId) {
@@ -50,7 +50,7 @@ class Updater extends \Magento\Config\Block\System\Config\Form\Field
                    updater.update();
                }
                 });
-               </script>';
+               </scripts>';
 
         $html .= sprintf($js, $this->_directoryHelper->getRegionJson());
         return $html;

@@ -142,9 +142,9 @@ class Gallery extends AbstractElement
             }
         }
         if ($i == 0) {
-            $html .= '<script type="text/javascript">' .
+            $html .= '<scripts type="text/javascript">' .
                 'document.getElementById("gallery_thead").style.visibility="hidden";' .
-                '</script>';
+                '</scripts>';
         }
 
         $html .= '</tbody></table>';
@@ -154,7 +154,7 @@ class Gallery extends AbstractElement
 
         $html .= <<<EndSCRIPT
 
-        <script language="javascript">
+        <scripts language="javascript">
         id = 0;
 
         function addNewImg(){
@@ -218,7 +218,7 @@ class Gallery extends AbstractElement
 		    };
 
 	    }
-        </script>
+        </scripts>
 
 EndSCRIPT;
         $html .= $this->getAfterElementHtml();

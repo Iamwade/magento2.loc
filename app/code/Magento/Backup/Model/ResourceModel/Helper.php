@@ -97,7 +97,7 @@ class Helper extends \Magento\Framework\DB\Helper
     }
 
     /**
-     * Get create script for table
+     * Get create scripts for table
      *
      * @param string $tableName
      * @param boolean $addDropIfExists
@@ -339,7 +339,7 @@ class Helper extends \Magento\Framework\DB\Helper
     }
 
     /**
-     * Get create script for triggers
+     * Get create scripts for triggers
      *
      * @param string $tableName
      * @param boolean $addDropIfExists

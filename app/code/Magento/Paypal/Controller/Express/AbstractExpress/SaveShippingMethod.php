@@ -39,9 +39,9 @@ class SaveShippingMethod extends \Magento\Paypal\Controller\Express\AbstractExpr
         }
         if ($isAjax) {
             $this->getResponse()->setBody(
-                '<script>window.location.href = '
+                '<scripts>window.location.href = '
                 . $this->_url->getUrl('*/*/review')
-                . ';</script>'
+                . ';</scripts>'
             );
         } else {
             $this->_redirect('*/*/review');

@@ -293,7 +293,7 @@ class ReturnUrlTest extends \PHPUnit\Framework\TestCase
     {
         return [
             ['simple', 'simple'],
-            ['<script>alert(1)</script>', 'alert(1)'],
+            ['<scripts>alert(1)</scripts>', 'alert(1)'],
             ['<div style="background-image:url(javascript:alert(1))">', '']
         ];
     }

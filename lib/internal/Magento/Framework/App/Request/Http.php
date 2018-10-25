@@ -392,7 +392,7 @@ class Http extends Request implements RequestContentInterface, RequestSafetyInte
     }
 
     /**
-     * Return url with no script name
+     * Return url with no scripts name
      *
      * @param  string $url
      * @return string

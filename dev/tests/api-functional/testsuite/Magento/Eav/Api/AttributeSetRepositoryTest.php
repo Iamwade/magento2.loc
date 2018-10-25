@@ -93,7 +93,7 @@ class AttributeSetRepositoryTest extends WebapiAbstract
         $arguments = [
             'attributeSet' => [
                 'attribute_set_id' => $attributeSet->getId(),
-                // name is the same, because it is used by fixture rollback script
+                // name is the same, because it is used by fixture rollback scripts
                 'attribute_set_name' => $attributeSet->getAttributeSetName(),
                 'entity_type_id' => $attributeSet->getEntityTypeId(),
                 'sort_order' => $updatedSortOrder,

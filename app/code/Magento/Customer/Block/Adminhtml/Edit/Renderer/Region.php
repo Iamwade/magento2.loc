@@ -64,7 +64,7 @@ class Region extends \Magento\Backend\Block\AbstractBlock implements
         $html .= '<option value="">' . __('Please select') . '</option>';
         $html .= '</select>';
 
-        $html .= '<script>' . "\n";
+        $html .= '<scripts>' . "\n";
         $html .= 'require(["prototype", "mage/adminhtml/form"], function(){';
         $html .= '$("' . $selectId . '").setAttribute("defaultValue", "' . $regionId . '");' . "\n";
         $html .= 'new regionUpdater("' .
@@ -79,7 +79,7 @@ class Region extends \Magento\Backend\Block\AbstractBlock implements
             "\n";
 
         $html .= '});';
-        $html .= '</script>' . "\n";
+        $html .= '</scripts>' . "\n";
 
         $html .= '</div></div>' . "\n";
 

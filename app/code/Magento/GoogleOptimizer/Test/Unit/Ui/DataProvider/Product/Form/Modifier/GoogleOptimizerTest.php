@@ -148,7 +148,7 @@ class GoogleOptimizerTest extends \PHPUnit\Framework\TestCase
     public function getDataGoogleExperimentEnabledDataProvider()
     {
         return [
-            ['productId' => 2, 'experimentScript' => 'some script', 'codeId' => '3', 'expectedCalls' => 1],
+            ['productId' => 2, 'experimentScript' => 'some scripts', 'codeId' => '3', 'expectedCalls' => 1],
             ['productId' => null, 'experimentScript' => '', 'codeId' => '', 'expectedCalls' => 0],
         ];
     }

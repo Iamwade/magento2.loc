@@ -81,13 +81,13 @@ class Redirect extends Template
      */
     public function getRedirect()
     {
-        return '<script type="text/javascript">
+        return '<scripts type="text/javascript">
             (function($){
                 $($.mage.redirect("' .
             $this->getTargetURL() .
             '"));
             })(jQuery);
-        </script>';
+        </scripts>';
     }
 
     /**

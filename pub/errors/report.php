@@ -12,9 +12,9 @@ $processor = $processorFactory->createProcessor();
 if (isset($reportData) && is_array($reportData)) {
     $reportUrl = $processor->saveReport($reportData);
     if (headers_sent()) {
-        echo '<script type="text/javascript">';
+        echo '<scripts type="text/javascript">';
         echo "window.location.href = '{$reportUrl}';";
-        echo '</script>';
+        echo '</scripts>';
         exit;
     }
 }

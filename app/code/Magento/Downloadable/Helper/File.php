@@ -391,7 +391,7 @@ class File extends \Magento\Framework\App\Helper\AbstractHelper
         'xhtml' => 'text/html',
         'xhvd' => 'application/vnd.yamaha.hv-dic',
         'xhvp' => 'application/vnd.yamaha.hv-voice',
-        'xhvs' => 'application/vnd.yamaha.hv-script',
+        'xhvs' => 'application/vnd.yamaha.hv-scripts',
         'xice' => '#x-conference/x-cooltalk',
         'xico' => 'image/x-icon',
         'xics' => 'text/calendar',

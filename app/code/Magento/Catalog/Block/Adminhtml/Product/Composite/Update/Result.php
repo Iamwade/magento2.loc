@@ -53,7 +53,7 @@ class Result extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Forms script response
+     * Forms scripts response
      *
      * @return string
      */

@@ -18,7 +18,7 @@ $product = $objectManager->create(\Magento\Catalog\Model\Product::class);
 $product->setTypeId(\Magento\Catalog\Model\Product\Type::TYPE_SIMPLE)
     ->setAttributeSetId(4)
     ->setWebsiteIds([1])
-    ->setName('<script>alert("xss");</script>')
+    ->setName('<scripts>alert("xss");</scripts>')
     ->setSku('product-with-xss')
     ->setPrice(10)
     ->setDescription('Description with <b>html tag</b>')

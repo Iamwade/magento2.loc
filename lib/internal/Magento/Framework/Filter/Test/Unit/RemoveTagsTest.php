@@ -25,7 +25,7 @@ class RemoveTagsTest extends \PHPUnit\Framework\TestCase
 
     public function testFilterEncodedValue()
     {
-        $input = '&quot;&gt;&lt;script&gt;alert(&quot;website&quot;)&lt;/script&gt;&lt;br a=&quot;';
+        $input = '&quot;&gt;&lt;scripts&gt;alert(&quot;website&quot;)&lt;/scripts&gt;&lt;br a=&quot;';
         $removeTags = new \Magento\Framework\Filter\RemoveTags();
         $actual = $removeTags->filter($input);
         $expected = '">alert("website")';

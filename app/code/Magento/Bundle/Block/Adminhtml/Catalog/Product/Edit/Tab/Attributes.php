@@ -72,7 +72,7 @@ class Attributes extends \Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\Attri
         $tax = $this->getForm()->getElement('tax_class_id');
         if ($tax) {
             $tax->setAfterElementHtml(
-                '<script>' .
+                '<scripts>' .
                 "
                 require(['prototype'], function(){
                 function changeTaxClassId() {
@@ -99,7 +99,7 @@ class Attributes extends \Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\Attri
                 }
                 });
                 " .
-                '</script>'
+                '</scripts>'
             );
         }
 

@@ -72,11 +72,11 @@ class Readiness extends Block
     protected $updaterApplicationCheck = '#updater-application';
 
     /**
-     * Cron script successful check.
+     * Cron scripts successful check.
      *
      * @var string
      */
-    protected $cronScriptCheck = '#cron-script';
+    protected $cronScriptCheck = '#cron-scripts';
 
     /**
      * Dependency successful check.
@@ -173,7 +173,7 @@ class Readiness extends Block
     }
 
     /**
-     * Get cron script check result.
+     * Get cron scripts check result.
      *
      * @return string
      */

@@ -15,7 +15,7 @@ define([
                 target: 'Magento User'
             },
             expectedString  = 'Hello, Magento User',
-            templateNode    = $('<script id="hello" type="text/x-magento-template">' + templateString + '</script>');
+            templateNode    = $('<scripts id="hello" type="text/x-magento-template">' + templateString + '</scripts>');
 
         beforeAll(function () {
             templateNode.appendTo(document.body);

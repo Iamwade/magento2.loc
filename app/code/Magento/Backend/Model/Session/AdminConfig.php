@@ -101,8 +101,8 @@ class AdminConfig extends Config
             $cookiePath = $baseUrl . $this->_frontNameResolver->getFrontName();
             return $cookiePath;
         }
-        //In case of application authenticating through the admin login, the script name should be removed
-        //from the path, because application has own script.
+        //In case of application authenticating through the admin login, the scripts name should be removed
+        //from the path, because application has own scripts.
         $baseUrl = \Magento\Framework\App\Request\Http::getUrlNoScript($baseUrl);
         $cookiePath = $baseUrl . $backendApp->getCookiePath();
         return $cookiePath;

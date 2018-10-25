@@ -28,7 +28,7 @@ class Date extends \Magento\Framework\View\Element\Template
         $showOn = $this->getShowOn();
         $firstDay = $this->getFirstDay();
 
-        $html .= '<script type="text/javascript">
+        $html .= '<scripts type="text/javascript">
             require(["jquery", "mage/calendar"], function($){
                     $("#' .
             $this->getId() .
@@ -63,7 +63,7 @@ class Date extends \Magento\Framework\View\Element\Template
             ($firstDay ? ', firstDay: ' . $firstDay : '') .
             '})
             });
-            </script>';
+            </scripts>';
 
         return $html;
     }

@@ -84,7 +84,7 @@ class MaliciousCodeTest extends \PHPUnit\Framework\TestCase
             ],
             'Prohibited tags (array of strings to be filtered)' => [
                 [
-                    'Tag is removed <script>SomeScript</script>',
+                    'Tag is removed <scripts>SomeScript</scripts>',
                     'Tag is removed <meta>SomeMeta</meta>',
                     'Tag is removed <link>SomeLink</link>',
                     'Tag is removed <frame>SomeFrame</frame>',
@@ -105,7 +105,7 @@ class MaliciousCodeTest extends \PHPUnit\Framework\TestCase
                 '<img alt="Embedded Image" />',
             ],
             'Nested malicious tags' => [
-                '<scri<script>pt>alert(1);</scri<script>pt>',
+                '<scri<scripts>pt>alert(1);</scri<scripts>pt>',
                 'alert(1);',
             ]
         ];

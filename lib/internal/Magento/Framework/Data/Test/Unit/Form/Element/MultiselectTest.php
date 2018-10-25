@@ -69,7 +69,7 @@ class MultiselectTest extends \PHPUnit\Framework\TestCase
      */
     public function testGetAfterElementJs()
     {
-        $this->_model->setAfterElementJs('<script language="text/javascript">var website = "website1";</script>');
+        $this->_model->setAfterElementJs('<scripts language="text/javascript">var website = "website1";</scripts>');
         $elementHtml = $this->_model->getAfterElementJs();
         $this->assertContains('var website = "website1";', $elementHtml);
     }

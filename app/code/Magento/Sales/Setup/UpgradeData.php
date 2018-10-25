@@ -19,7 +19,7 @@ use Magento\Sales\Model\OrderFactory;
 use Magento\Sales\Model\ResourceModel\Order\Address\CollectionFactory as AddressCollectionFactory;
 
 /**
- * Data upgrade script
+ * Data upgrade scripts
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

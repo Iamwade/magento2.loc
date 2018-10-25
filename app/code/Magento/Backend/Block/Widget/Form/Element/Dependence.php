@@ -124,14 +124,14 @@ class Dependence extends \Magento\Backend\Block\AbstractBlock
         if (!$this->_depends) {
             return '';
         }
-        return '<script>
+        return '<scripts>
             require(["mage/adminhtml/form"], function(){
         new FormElementDependenceController(' .
             $this->_getDependsJson() .
             ($this->_configOptions ? ', ' .
             $this->_jsonEncoder->encode(
                 $this->_configOptions
-            ) : '') . '); });</script>';
+            ) : '') . '); });</scripts>';
     }
 
     /**

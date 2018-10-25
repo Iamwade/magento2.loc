@@ -153,7 +153,7 @@ class RetrieveImage extends \Magento\Backend\App\Action
     }
 
     /**
-     * Invalidates files that have script extensions.
+     * Invalidates files that have scripts extensions.
      *
      * @param string $filePath
      * @throws \Magento\Framework\Exception\ValidatorException

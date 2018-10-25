@@ -40,7 +40,7 @@ class UpdateShippingMethods extends \Magento\Paypal\Controller\Express\AbstractE
             );
         }
         $this->getResponse()->setBody(
-            '<script>window.location.href = ' . $this->_url->getUrl('*/*/review') . ';</script>'
+            '<scripts>window.location.href = ' . $this->_url->getUrl('*/*/review') . ';</scripts>'
         );
     }
 }

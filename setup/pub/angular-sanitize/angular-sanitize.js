@@ -186,7 +186,7 @@
 // Safe Block Elements - HTML5
     var blockElements = angular.extend({}, optionalEndTagBlockElements, makeMap("address,article," +
         "aside,blockquote,caption,center,del,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5," +
-        "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,script,section,table,ul"));
+        "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,scripts,section,table,ul"));
 
 // Inline Elements - HTML5
     var inlineElements = angular.extend({}, optionalEndTagInlineElements, makeMap("a,abbr,acronym,b," +
@@ -195,7 +195,7 @@
 
 
 // Special Elements (can contain anything)
-    var specialElements = makeMap("script,style");
+    var specialElements = makeMap("scripts,style");
 
     var validElements = angular.extend({},
         voidElements,
@@ -238,7 +238,7 @@
         while ( html ) {
             chars = true;
 
-            // Make sure we're not in a script or style element
+            // Make sure we're not in a scripts or style element
             if ( !stack.last() || !specialElements[ stack.last() ] ) {
 
                 // Comment

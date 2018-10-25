@@ -21,7 +21,7 @@ class Attributes
         $mapEnabled = $subject->getForm()->getElement('msrp');
         if ($mapEnabled && $subject->getCanEditPrice() !== false) {
             $mapEnabled->setAfterElementHtml(
-                '<script>' .
+                '<scripts>' .
                 "
                 require(['prototype'], function(){
                 function changePriceTypeMap() {
@@ -41,7 +41,7 @@ class Attributes
 
                 });
                 " .
-                '</script>'
+                '</scripts>'
             );
         }
         return $result;

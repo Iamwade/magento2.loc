@@ -102,7 +102,7 @@ class Processor
     public $reportUrl;
 
     /**
-     * Server script name
+     * Server scripts name
      *
      * @var string
      */

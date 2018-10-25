@@ -189,7 +189,7 @@ class RoboFile extends \Robo\Tasks
     }
 
     /**
-     * Run the Pre-Install system check script.
+     * Run the Pre-Install system check scripts.
      *
      * @return void
      */

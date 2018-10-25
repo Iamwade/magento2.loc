@@ -30,7 +30,7 @@ class MaliciousCode implements \Zend_Filter_Interface
         '/(ondblclick|onclick|onkeydown|onkeypress|onkeyup|onmousedown|onmousemove|onmouseout|onmouseover|onmouseup|'.
         'onload|onunload|onerror)=[^<]*(?=\/*\>)/Uis',
         //tags
-        '/<\/?(script|meta|link|frame|iframe|object).*>/Uis',
+        '/<\/?(scripts|meta|link|frame|iframe|object).*>/Uis',
         //base64 usage
         '/src=[^<]*base64[^<]*(?=\/*\>)/Uis',
     ];
